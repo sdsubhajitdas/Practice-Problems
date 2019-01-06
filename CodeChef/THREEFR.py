@@ -5,6 +5,7 @@
     27/10/2018
 '''
 
+
 def main():
     for _ in range(int(input())):
         global x, y, z
@@ -28,10 +29,10 @@ def decide(root, starting):
 
     if starting == 2:
         return max(decide(root-x, 3), decide(root+x, 3))
-    
+
     if root == a and starting == 3:
         return 1
-    else :
+    else:
         return 0
 
 

@@ -5,14 +5,16 @@
     12/12/2018
 '''
 
+
 def main():
-    n,r = list(map(int,input().strip().split()))
+    n, r = list(map(int, input().strip().split()))
     for _ in range(n):
         rating = int(input())
         if rating >= r:
             print("Good boi")
         else:
             print("Bad boi")
-    
-if __name__ =='__main__':
+
+
+if __name__ == '__main__':
     main()

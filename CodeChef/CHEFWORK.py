@@ -5,25 +5,26 @@
     7/4/2018
 '''
 
+
 def main():
     n = int(input())
     coins = list(map(int, input().split()))
-    workers = list(map(int,input().split()))
+    workers = list(map(int, input().split()))
 
-    trans = [coins[index] for index,typ in enumerate(workers) if typ == 1]
-    author = [coins[index] for index,typ in enumerate(workers) if typ == 2]
-    both = [coins[index] for index,typ in enumerate(workers) if typ == 3]
+    trans = [coins[index] for index, typ in enumerate(workers) if typ == 1]
+    author = [coins[index] for index, typ in enumerate(workers) if typ == 2]
+    both = [coins[index] for index, typ in enumerate(workers) if typ == 3]
 
-    if (workers.count(1)+workers.count(2))!=0:
-        min_both =100001
-        min_trans =100001
-        min_author =100001
-        if len(both) !=0:
+    if (workers.count(1)+workers.count(2)) != 0:
+        min_both = 100001
+        min_trans = 100001
+        min_author = 100001
+        if len(both) != 0:
             min_both = min(both)
-        if len(trans) !=0:
-            min_trans =min(trans)
-        if len(author) !=0:
-            min_author =min(author)
+        if len(trans) != 0:
+            min_trans = min(trans)
+        if len(author) != 0:
+            min_author = min(author)
 
         if min_both <= min_author or min_both <= min_trans:
             print(min_both)

@@ -5,6 +5,7 @@
     21/10/2018
 '''
 
+
 class Stack:
     stack = list()
 

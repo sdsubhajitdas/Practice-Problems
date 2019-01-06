@@ -1,4 +1,4 @@
-#https://www.codechef.com/IEMCO4/problems/IEMCO4A
+# https://www.codechef.com/IEMCO4/problems/IEMCO4A
 '''
 	Author - Subhajit Das
 	University of Engineering and Management, Kolkata
@@ -15,7 +15,7 @@ for i in range(testCase):
     s = str(input())
 
     res = s.count('a')+s.count('e')+s.count('i')+s.count('o')+s.count('u')
-    if res >=k:
+    if res >= k:
         ans.append("Good")
     else:
         ans.append("Bad")

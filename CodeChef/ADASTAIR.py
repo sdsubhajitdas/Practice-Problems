@@ -5,6 +5,7 @@
     21/10/2018
 '''
 
+
 def main():
     for _ in range(int(input())):
         n, k = tuple(map(int, input().strip().split()))

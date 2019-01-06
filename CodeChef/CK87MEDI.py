@@ -14,9 +14,10 @@ def main():
         inp = input().strip().split(" ")
         inp = [int(x) for x in inp]
         inp.sort()
-        out.append( inp[int(sum(nk)/2)] )
-    
+        out.append(inp[int(sum(nk)/2)])
+
     for e in out:
-        print (e)
+        print(e)
+
 
 main()

@@ -5,6 +5,7 @@
     6/1/2019
 '''
 
+
 def main():
     for _ in range(int(input())):
         s = input().strip().split(' ')
@@ -12,7 +13,6 @@ def main():
             print('Real Fancy')
         else:
             print('regularly fancy')
-
 
 
 if __name__ == "__main__":

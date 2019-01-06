@@ -8,20 +8,22 @@
 from sys import stdout
 from random import randint
 
+
 def main():
-    o = [1,2,3]
-    
-    x = randint(1,3)
+    o = [1, 2, 3]
+
+    x = randint(1, 3)
     print(x)
     stdout.flush()
-    
+
     y = int(input())
-    
+
     o.remove(x)
     o.remove(y)
-    
+
     print(o[0])
     stdout.flush()
 
-if __name__ =='__main__':
+
+if __name__ == '__main__':
     main()

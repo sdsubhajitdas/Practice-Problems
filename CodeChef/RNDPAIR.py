@@ -5,18 +5,20 @@
 	20/11/2017
 '''
 
+
 def main():
-    out=[]
+    out = []
     for tc in range(int(input())):
-        n=int(input())
-        arr=[int(s) for s in input().split(" ")]
-        o=[]
+        n = int(input())
+        arr = [int(s) for s in input().split(" ")]
+        o = []
         for i in range(len(arr)):
-            for j in range(i+1,len(arr)):
+            for j in range(i+1, len(arr)):
                 o.append(arr[i]+arr[j])
         out.append(o.count(max(o))/len(o))
-    
+
     for i in out:
         print(i)
+
 
 main()

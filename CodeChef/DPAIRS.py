@@ -6,6 +6,7 @@
     Status - Partial
 '''
 
+
 def main():
     n, m = list(map(int, input().strip().split()))
     a = list(map(int, input().strip().split()))
@@ -31,7 +32,7 @@ def main():
 
     for key in track.keys():
         res = track[key]
-        print(res[0],res[1])
+        print(res[0], res[1])
 
 
 if __name__ == "__main__":

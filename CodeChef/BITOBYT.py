@@ -19,7 +19,7 @@ def main():
         time = [0]*3
         while t <= n:
             change = [None]*3
-            
+
             # Bit changing into nibble
             if t % 2 == 1 and bit != 0:
                 #print("Changing Bit to Nibble")
