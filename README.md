@@ -10,3 +10,7 @@ Have a good day
 CodeChef      *https://www.codechef.com/users/jeetudas95*
 
 HackerEarth   *https://www.hackerearth.com/@jeetudas95*
+
+HackerRank  *https://www.hackerrank.com/jeetudas95*
+
+GeeksforGeeks  *https://auth.geeksforgeeks.org/user/SubhajitDas%28Jeetu%29/profile*
