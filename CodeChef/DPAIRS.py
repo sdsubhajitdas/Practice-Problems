@@ -3,7 +3,6 @@
 	Author - Subhajit Das
 	University of Engineering and Management, Kolkata
     6/1/2019
-    Status - Partial
 '''
 
 
@@ -12,28 +11,14 @@ def main():
     a = list(map(int, input().strip().split()))
     b = list(map(int, input().strip().split()))
 
-    track = dict()
-    count = 0
-    broken = False
+    a = sorted([(a[i],i) for i in range(n)])
+    b = sorted([(b[i],i) for i in range(m)])
 
-    for i, ai in enumerate(a):
-        for j, bj in enumerate(b):
-            # Terminate when N+M-1 elements are found
-            if count == (n+m-1):
-                broken = True
-                break
-            s = ai + bj
-            if s not in track.keys():
-                track[s] = (i, j)
-                count += 1
+    for i in range(n):
+        print(a[i][1],b[0][1])
 
-        if broken:
-            break
-
-    for key in track.keys():
-        res = track[key]
-        print(res[0], res[1])
-
+    for i in range(1,m):
+        print(a[-1][1],b[i][1])
 
 if __name__ == "__main__":
     main()
