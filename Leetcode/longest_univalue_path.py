@@ -1,9 +1,10 @@
-# Definition for a binary tree node.
-""" class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None """
+# https://leetcode.com/problems/longest-univalue-path/
+'''
+    Author - Subhajit Das
+    University of Engineering and Management, Kolkata
+    10/06/2019
+'''
+
 
 class Solution:
     
