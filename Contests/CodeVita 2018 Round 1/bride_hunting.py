@@ -69,7 +69,6 @@ def main():
 
     i, j, c, _ = brides[0]
     print(i+1, j+1, c, sep=':')
-    print(brides)
 
 
 if __name__ == "__main__":
