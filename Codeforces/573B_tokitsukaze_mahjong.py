@@ -2,52 +2,32 @@
 '''
     Author - Subhajit Das
     University of Engineering and Management, Kolkata
-    12/07/2019
+    14/07/2019
 '''
 
 
-def get_koutsu(a: dict) -> int:
-    count = -1
-    for digit in range(1, 10):
-        for tile in ['m', 'p', 's']:
-            find = str(digit)+tile
-            if(a.get(find, -1) != -1):
-                count = max(count, a[find])
-    return 3-count
-
-
-def get_shuntsu(a: dict) -> int:
-    count = -1
-    mcount = count
-    for digit in range(1, 8):
-        for tile in ['m', 'p', 's']:
-            f1 = str(digit)+tile
-            f2 = str(digit+1)+tile
-            f3 = str(digit+2)+tile
-
-            if(a.get(f1, -1) != -1):
-                count += 1
-            if(a.get(f2, -1) != -1):
-                count += 1
-            if(a.get(f3, -1) != -1):
-                count += 1
-            if(count == 3):
-                return 0
-            mcount = max(mcount, count)
-            count = 0
-
-    return 3-mcount
+def f(x: int) -> int:
+    return 1 if not not x else 0
 
 
 def main():
     inp = input().split()
-    table = dict().fromkeys(inp, 0)
-    for i in inp:
-        table[i] += 1
+    idx = {'m': 0, 'p': 1, 's': 2}
+    table = [[0]*9 for _ in range(3)]
 
-    k = get_koutsu(table)
-    s = get_shuntsu(table)
-    print(min(k,s))
+    for i in inp:
+        r = idx[i[1]]
+        c = int(i[0])-1
+        table[r][c] += 1
+
+    ans = 3
+
+    for i in range(3):
+        for j in range(9):
+            ans = min(ans, 3-table[i][j])
+            if(j+2 < 9):
+                ans = min(ans, 3 - f(table[i][j])-f(table[i][j+1])-f(table[i][j+2]))
+    print(ans)
 
 
 if __name__ == "__main__":
