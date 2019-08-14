@@ -26,8 +26,3 @@ class Solution:
 
         return quotient
 
-
-if __name__ == "__main__":
-
-    print(Solution().divide(-2147483648, -1))
-    print(Solution().divide(10, -7))
