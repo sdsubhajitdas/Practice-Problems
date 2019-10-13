@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/add-two-numbers/
+# https://leetcode.com/problems/two-sum/
 '''
     Author - Subhajit Das
     University of Engineering and Management, Kolkata
