@@ -2,7 +2,7 @@
 '''
     Author - Subhajit Das
     University of Engineering and Management, Kolkata
-    13/10/2019
+    21/10/2019
 '''
 # Definition for singly-linked list.
 # class ListNode(object):
