@@ -9,7 +9,7 @@ Have a good day
 # Account links
 - [CodeChef](https://www.codechef.com/users/jeetudas95)
 - [Codeforces](http://codeforces.com/profile/jeetudas95)
-- [GeeksforGeeks](https://auth.geeksforgeeks.org/user/SubhajitDas%28Jeetu%29/profile)
+- [GeeksforGeeks](https://geeksforgeeks.org/user/subhajit_das/profile)
 - [HackerEarth](https://www.hackerearth.com/@jeetudas95)
-- [HackerRank](https://www.hackerrank.com/jeetudas95)
+- [HackerRank](https://www.hackerrank.com/sdsubhajitdas)
 - [My Website](https://sdsubhajitdas.github.io)
