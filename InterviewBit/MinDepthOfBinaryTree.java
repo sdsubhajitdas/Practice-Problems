@@ -1,4 +1,4 @@
-// https://www.interviewbit.com/problems/max-depth-of-binary-tree/
+// https://www.interviewbit.com/problems/min-depth-of-binary-tree/
 /*
     Author @Subhajit Das (sdsubhajitdas.github.io)
     SWE @Turbot HQ India PVT Ltd.
@@ -21,9 +21,15 @@ import java.util.*;
  * }
  */
 public class Solution {
-    public int maxDepth(TreeNode root) {
+    public int minDepth(TreeNode root) {
         if(root == null) return 0;
 
-        return 1 + Math.max(this.maxDepth(root.left), this.maxDepth(root.right));
+        if(root.left == null && root.right == null) return 1;
+
+        if(root.left == null) return this.minDepth(root.right) + 1;
+
+        if(root.right == null) return this.minDepth(root.left) + 1;
+
+        return 1 + Math.min(this.minDepth(root.left), this.minDepth(root.right));
     }
 }
