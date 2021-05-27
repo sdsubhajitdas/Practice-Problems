@@ -43,6 +43,3 @@ public class Solution {
     }
 }
 
-// Expected output is [1 1 6 ] [1 2 5 ] [1 7 ] [2 6 ]
-// [ 1, 1, 2, 5, 6, 7, 10 ]
-// 8
